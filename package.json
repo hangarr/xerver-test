@@ -1,0 +1,16 @@
+{
+  "name": "xerver-test",
+  "version": "1.0.0",
+  "description": "Test wrapper for xerver app module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rick Hangartner",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "debug": "^2.2.0",
+    "express": "^4.13.1"
+  }
+}
