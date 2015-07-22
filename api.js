@@ -10,7 +10,7 @@
 	  , debug = require('debug')('api')
 //	  , common = require(path.resolve(process.env.PROJECT_DIR, './server/lib/common.js'))
 //	  , nodeversion = require('./1.0/nodejsutils/nodeversion.js').run;
-	  , common = require('bsjstest').lib.common
+	  , common = require('xerver').lib.common
 //	  , common = require(path.resolve(__dirname, '../server/lib/common.js'))
 //	  , common = require('bsjstest/server/lib/common.js')
 	  , xerverappdir = require('xerver-app/dirname.js')

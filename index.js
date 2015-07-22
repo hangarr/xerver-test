@@ -7,7 +7,7 @@
 	var fs = require('fs')
 	  , path = require('path')
 	  , api = require('./api.js')
-	  , start = require('bsjstest').start;
+	  , start = require('xerver').start;
 	
 	// API
 	var port = process.env.PORT || '3000';
