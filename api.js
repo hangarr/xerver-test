@@ -8,12 +8,8 @@
 	  , path = require('path')
 	  , bodyParser = require('body-parser')
 	  , debug = require('debug')('api')
-//	  , common = require(path.resolve(process.env.PROJECT_DIR, './server/lib/common.js'))
-//	  , nodeversion = require('./1.0/nodejsutils/nodeversion.js').run;
 	  , common = require('xerver').lib.common
-//	  , common = require(path.resolve(__dirname, '../server/lib/common.js'))
-//	  , common = require('bsjstest/server/lib/common.js')
-	  , xerverappdir = require('xerver-app/dirname.js')
+	  , xerverapp = require('xerver-app')
 	  , nodeversion = require('xerver-app/1.0/nodejsutils/nodeversion.js').run;
 
 	var api = function(app, options) {
@@ -21,7 +17,7 @@
 		var routes = express.Router();
 
 		// static requests would get handled here
-		routes.use('/1.0/nodejsutils', express['static'](path.resolve(xerverappdir(), './1.0/public'),
+		routes.use('/1.0/nodejsutils', express['static'](path.resolve(xerverapp.dirname(), './1.0/public'),
 				{'redirect': true}));
 		
 		routes.use('/1.0/nodejsutils/nodeversion', nodeversion);
