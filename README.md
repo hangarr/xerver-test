@@ -1,4 +1,4 @@
-# xerver-app
+# xerver-test
 ## Example test wrapper for xerver app module
 A simple example of a test wrapper for an **xerver** app.  
 
