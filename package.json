@@ -12,6 +12,7 @@
     "body-parser": "^1.13.2",
     "debug": "^2.2.0",
     "express": "^4.13.1",
-    "xerver": "git://github.com/hangarr/xerver.git"
+    "xerver": "git://github.com/hangarr/xerver.git",
+    "xerver-app": "git://github.com/hangarr/xerver-app.git"
   }
 }
