@@ -14,5 +14,8 @@
     "express": "^4.13.1",
     "xerver": "git://github.com/hangarr/xerver.git",
     "xerver-app": "git://github.com/hangarr/xerver-app.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
   }
 }
