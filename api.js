@@ -20,7 +20,8 @@
 		routes.use('/1.0/nodejsutils', express['static'](path.resolve(xerverapp.dirname(), './1.0/public'),
 				{'redirect': true}));
 		
-		routes.use('/1.0/nodejsutils/nodeversion', nodeversion);
+		// note the .js extension to conform to unusual Backendless convention for handler scripts
+		routes.use('/1.0/nodejsutils/nodeversion.js', nodeversion);
 
 		// hang the subrouter on the app.
 		// It seems this could improve route matching performance for the different sub-apis

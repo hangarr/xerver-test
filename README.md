@@ -30,7 +30,12 @@ curl -i -k -X GET http://localhost:3000/x -H "Content-Type: application/json" \
 curl -i -k -X GET http://localhost:3000/xerver-app/1.0/nodejsutils/index.html -H "Content-Type: application/json" \
      -u <id_string>:<token_string>
 
-# nodeversion endpoint test
+# nodeversion endpoint test - shouldn't work because it is missing the .js extension
+curl -i -k -X GET http://localhost:3000/xerver-app/nodeversion -H "Content-Type: application/json" \
+     -u <id_string>:<token_string>
+```
+
+# nodeversion endpoint test - should work because it conforms to the .js extension convention for now
 curl -i -k -X GET http://localhost:3000/xerver-app/nodeversion -H "Content-Type: application/json" \
      -u <id_string>:<token_string>
 ```
